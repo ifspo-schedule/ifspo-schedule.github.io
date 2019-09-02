@@ -19,6 +19,9 @@
   font-size: 100%;
   border: none;
 }
+.display_block_border_none:hover {
+  background-color: #abb;
+}
 .btn_blue {
   display: block;
   background-color: #fff;
