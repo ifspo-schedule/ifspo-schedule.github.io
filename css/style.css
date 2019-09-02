@@ -1,0 +1,232 @@
+:root {
+  font-size: 10px;
+}
+* {
+  font-family: sans-serif;
+}
+body {
+  padding-top: 5rem;
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
+input {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.info {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.chetnost_block {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+}
+.chetnost_block span:nth-child(1) {
+  color: #1946BA;
+}
+.number_week {
+  display: none;
+}
+.display_none {
+  display: none;
+}
+.display_block {
+  display: block;
+  display: flex;
+  font-size: 100%;
+  border-bottom: 1px solid silver;
+  transition: background 0.3s;
+}
+.display_block:hover {
+  background-color: #f2f2f2;
+}
+.display_block_border_none {
+  display: block;
+  display: flex;
+  font-size: 100%;
+  border: none;
+  transition: background 0.3s;
+}
+.display_block_border_none:hover {
+  background-color: #f2f2f2;
+}
+.btn_blue {
+  display: block;
+  background-color: #fff;
+  color: #bbb;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #bbb;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  outline: none;
+  margin-right: 1rem;
+}
+.btn_blue:focus {
+  outline: none;
+}
+.btn_blue__active {
+  display: block;
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  outline: none;
+  margin-right: 1rem;
+  border: 2px solid #1946ba;
+  color: #1946ba;
+  transition: background 0.3s;
+}
+.btn_blue__active:hover {
+  border: 2px solid #1946ba;
+  color: #1946ba;
+}
+.btn_blue__active:focus {
+  outline: none;
+}
+.buttons {
+  display: flex;
+}
+.menu {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-right: 3rem;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+}
+.date {
+  font-size: 1.6rem;
+}
+.name {
+  text-align: center;
+}
+.name h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  color: gray;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 400;
+}
+.chet {
+  display: flex;
+  justify-content: center;
+}
+.chet-rects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.chet-rects-block {
+  width: 32rem;
+  height: 50rem;
+  display: inline-block;
+  /* background-color: #f9f9f9; */
+  border: 1px solid #EEEEEE;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  vertical-align: top;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.chet-rects-block-day h2 {
+  font-size: 1.4rem;
+}
+.chet-rects-block-lessons-block {
+  display: flex;
+  font-size: 100%;
+  border-bottom: 1px solid silver;
+  transition: background 0.3s;
+}
+.chet-rects-block-lessons-block:hover {
+  background-color: #f2f2f2;
+}
+.chet-rects-block-lessons-block-bottom {
+  display: flex;
+  font-size: 100%;
+  border-bottom: none;
+  transition: background 0.3s;
+}
+.chet-rects-block-lessons-block-bottom:hover {
+  background-color: #f2f2f2;
+}
+.chet-rects-block-lessons-block-time {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-right: 1px solid silver;
+}
+.chet-rects-block-lessons-block-time span:nth-child(4) {
+  font-size: 1.3rem;
+  color: #bbb;
+}
+.chet-rects-block-lessons-block-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 40rem;
+}
+.chet-rects-block-lessons-block-info span:nth-child(2) {
+  color: gray;
+}
+.chet-rects-block-lessons-block-cabinet {
+  width: 7rem;
+  padding: 0.5rem;
+  border-left: 1px solid silver;
+  text-align: center;
+}
+@media (max-width: 780px) {
+  body {
+    padding-top: 2rem;
+  }
+  .date {
+    text-align: center;
+  }
+  .buttons {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .chetnost_block {
+    margin-left: 0;
+    text-align: center;
+  }
+  .flex {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 700px) {
+  .menu {
+    display: none;
+  }
+}
