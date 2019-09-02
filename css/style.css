@@ -1,6 +1,9 @@
 :root {
   font-size: 10px;
 }
+* {
+  font-family: sans-serif;
+}
 body,
 html {
   scroll-behavior: smooth;
@@ -8,9 +11,12 @@ html {
 input {
   display: none;
 }
-.chetnost {
+.chetnost_block {
   text-align: right;
   font-size: 1.6rem;
+}
+.chetnost_block span:nth-child(1) {
+  color: #1946BA;
 }
 .number_week {
   display: none;
@@ -26,7 +32,7 @@ input {
   transition: background 0.3s;
 }
 .display_block:hover {
-  background-color: #abb;
+  background-color: #f2f2f2;
 }
 .display_block_border_none {
   display: block;
@@ -36,7 +42,7 @@ input {
   transition: background 0.3s;
 }
 .display_block_border_none:hover {
-  background-color: #abb;
+  background-color: #f2f2f2;
 }
 .btn_blue {
   display: block;
@@ -146,7 +152,7 @@ h3 {
   transition: background 0.3s;
 }
 .chet-rects-block-lessons-block:hover {
-  background-color: #abb;
+  background-color: #f2f2f2;
 }
 .chet-rects-block-lessons-block-bottom {
   display: flex;
@@ -155,7 +161,7 @@ h3 {
   transition: background 0.3s;
 }
 .chet-rects-block-lessons-block-bottom:hover {
-  background-color: #abb;
+  background-color: #f2f2f2;
 }
 .chet-rects-block-lessons-block-time {
   padding: 0.5rem;
@@ -178,8 +184,10 @@ h3 {
   color: gray;
 }
 .chet-rects-block-lessons-block-cabinet {
+  width: 7rem;
   padding: 0.5rem;
   border-left: 1px solid silver;
+  text-align: center;
 }
 @media (max-width: 700px) {
   .date {
@@ -188,7 +196,7 @@ h3 {
   .buttons {
     justify-content: center;
   }
-  .chetnost {
+  .chetnost_block {
     text-align: center;
   }
 }

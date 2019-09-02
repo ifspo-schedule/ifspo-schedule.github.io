@@ -6,10 +6,7 @@ var day = new Array("Воскресенье", "Понедельник", "Вто�
 var month = new Array("января", "февраля", "марта", "апреля", "мая", "июня",
     "июля", "августа", "сентября", "октября", "ноября", "декабря");
 
-var week = new Array("чётная", "нечетная");
-
-
-document.querySelector('#date').textContent = (day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] +
+document.querySelector('#date').textContent = (day[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] +
     " " + d.getFullYear() + " г.");
 
 document.querySelector('#chet').addEventListener("click", () => {
@@ -65,10 +62,10 @@ DW.value = new Date().toJSON().slice(0, 10); // сегодняшняя дата 
 NW.innerHTML = new Date(DW.value).getWeek(); // номер текущей недели
 
 if (new Date(DW.value).getWeek() % 2 == 0) {
-    document.querySelector('.chetnost').textContent = "Нечётная неделя";
+    document.querySelector('.chetnost').textContent = "Нечётная ";
 }
 if (new Date(DW.value).getWeek() % 2 == 1) {
-    document.querySelector('.chetnost').textContent = "Чётная неделя";
+    document.querySelector('.chetnost').textContent = "Чётная ";
 }
 
 
