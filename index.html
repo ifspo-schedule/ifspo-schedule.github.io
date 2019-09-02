@@ -14,26 +14,32 @@
 </head>
 
 <body>
-    <div class="date">
-        <span id="date"></span>
-    </div>
-    <div class="number_week">
-        <input type="date" id="week">
-        <span>Порядковый номер недели: </span> <output></output>
-    </div>
-    <div class="chetnost_block">
-        <p>
-            <span class="chetnost"></span> неделя
-        </p>
-    </div>
+
     <div class="name">
         <h1>Расписание групп Y2338 / Y2339</h1>
     </div>
+
     <div class="container">
-        <div class="buttons">
-            <button class="btn_blue__active" id="all">Всё расписание</button>
-            <button class="btn_blue" id="chet">чётная</button>
-            <button class="btn_blue" id="nechet">нечётная</button>
+        <div class="flex">
+            <div class="buttons">
+                <button class="btn_blue__active" id="all">Всё расписание</button>
+                <button class="btn_blue" id="chet">чётная</button>
+                <button class="btn_blue" id="nechet">нечётная</button>
+            </div>
+            <div class="info">
+                <div class="date">
+                    <span id="date"></span>
+                </div>
+                <div class="number_week">
+                    <input type="date" id="week">
+                    <span>Порядковый номер недели: </span> <output></output>
+                </div>
+                <div class="chetnost_block">
+                    <p>
+                        <span class="chetnost"></span> неделя
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="menu">
             <nav>
@@ -90,12 +96,11 @@
                                 <span>201</span>
                             </div>
                         </div>
-                        <div class="chet-rects-block-lessons-block" id="chet_block">
+                        <div class="chet-rects-block-lessons-block">
                             <div class="chet-rects-block-lessons-block-time">
                                 <span>IV</span>
-                                <span>13:30</span>
-                                <span>15:00</span>
-                                <span>чет</span>
+                                <span>15:20</span>
+                                <span>16:50</span>
                             </div>
                             <div class="chet-rects-block-lessons-block-info">
                                 <span>Менеджмент в профессиональной деятельности (ЛЕК)</span>
@@ -105,19 +110,34 @@
                                 <span>303</span>
                             </div>
                         </div>
-                        <div class="chet-rects-block-lessons-block-bottom" id="nechet_block">
+                        <div class="chet-rects-block-lessons-block" id="chet_block">
                             <div class="chet-rects-block-lessons-block-time">
                                 <span>V</span>
-                                <span>15:20</span>
-                                <span>16:50</span>
-                                <span>нечет</span>
+                                <span>17:00</span>
+                                <span>18:30</span>
+                                <span>чет</span>
                             </div>
                             <div class="chet-rects-block-lessons-block-info">
-                                <span>Элементы высшей математики (ПРАК)</span>
+                                <span>Элементы высшей математики (ПРАК)</span>
                                 <span>Смирнов Дмитрий Станиславович</span>
                             </div>
                             <div class="chet-rects-block-lessons-block-cabinet">
                                 <span>310</span>
+                            </div>
+                        </div>
+                        <div class="chet-rects-block-lessons-block-bottom" id="nechet_block">
+                            <div class="chet-rects-block-lessons-block-time">
+                                <span>V</span>
+                                <span>17:00</span>
+                                <span>18:30</span>
+                                <span>нечет</span>
+                            </div>
+                            <div class="chet-rects-block-lessons-block-info">
+                                <span>Менеджмент в профессиональной деятельности (ПРАК)</span>
+                                <span>Пока не знаю</span>
+                            </div>
+                            <div class="chet-rects-block-lessons-block-cabinet">
+                                <span>303</span>
                             </div>
                         </div>
                     </div>
@@ -229,7 +249,7 @@
                             </div>
                             <div class="chet-rects-block-lessons-block-info">
                                 <span>Основы проектирования баз данных (ЛАБ)</span>
-                                <span>Смирнов Дмитрий Станиславович</span>
+                                <span>Пока не знаю</span>
                             </div>
                             <div class="chet-rects-block-lessons-block-cabinet">
                                 <span>113</span>
@@ -278,7 +298,7 @@
                             </div>
                             <div class="chet-rects-block-lessons-block-info">
                                 <span>Стандартизация, сертификация и техническое документоведение (ЛЕК)</span>
-                                <span>Смирнов Дмитрий Станиславович</span>
+                                <span>Пока не знаю</span>
                             </div>
                             <div class="chet-rects-block-lessons-block-cabinet">
                                 <span>307</span>

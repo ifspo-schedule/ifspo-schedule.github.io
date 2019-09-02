@@ -11,14 +11,26 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    padding-top: 5rem;
+}
+
 input {
     display: none;
 }
 
+.flex {
+    display: flex;
+}
 
+.info {
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
 
 .chetnost_block {
-    text-align: right;
+    margin-left: 2rem;
     font-size: 1.6rem;
 
     span:nth-child(1) {
@@ -241,7 +253,7 @@ h3 {
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 780px) {
     .date {
         text-align: center;
     }
@@ -252,6 +264,17 @@ h3 {
 
     .chetnost_block {
         text-align: center;
+    }
+
+    .flex {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
