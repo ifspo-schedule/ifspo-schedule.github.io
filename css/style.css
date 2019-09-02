@@ -5,6 +5,16 @@ body,
 html {
   scroll-behavior: smooth;
 }
+input {
+  display: none;
+}
+.chetnost {
+  text-align: right;
+  font-size: 1.6rem;
+}
+.number_week {
+  display: none;
+}
 .display_none {
   display: none;
 }
@@ -177,6 +187,9 @@ h3 {
   }
   .buttons {
     justify-content: center;
+  }
+  .chetnost {
+    text-align: center;
   }
 }
 @media (min-width: 700px) {
