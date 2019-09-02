@@ -1,6 +1,10 @@
 :root {
   font-size: 10px;
 }
+body,
+html {
+  scroll-behavior: smooth;
+}
 .display_none {
   display: none;
 }
