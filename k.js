@@ -1,3 +1,4 @@
+alert('Изменения на 4 сентября: Y2338 и Y2339 2, 3 пар нет, НО 4 пару отменять нельзя! (но это не точно)');
 var d = new Date();
 
 var day = new Array("Воскресенье", "Понедельник", "Вторник",
@@ -79,6 +80,4 @@ if (document.querySelector('.chetnost').textContent = "Нечётная ") {
     })
 
 }
-alert('Изменения на 4 сентября: Y2338 и Y2339 2, 3 пар нет, НО 4 пару отменять нельзя! (но это не точно)');
-
 NWG.innerHTML = new Date(new Date(DW.value).getFullYear(), 11, 28).getWeek();
