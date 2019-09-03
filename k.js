@@ -67,6 +67,18 @@ if (new Date(DW.value).getWeek() % 2 == 0) {
 if (new Date(DW.value).getWeek() % 2 == 1) {
     document.querySelector('.chetnost').textContent = "Чётная ";
 }
+if (document.querySelector('.chetnost').textContent = "Нечётная ") {
+    document.querySelector('.chetnost').addEventListener('click', () => {
+        document.querySelector('#nechet_block').className = "display_block_border_none";
+        document.querySelector('#chet_block').className = "display_none";
+        document.querySelector('#chet_blocktwo').className = "display_none";
+        document.querySelector('#bottom').className = "chet-rects-block-lessons-block-bottom";
+        document.querySelector('#chet').className = "btn_blue";
+        document.querySelector('#nechet').className = "btn_blue__active";
+        document.querySelector('#all').className = "btn_blue";
+    })
 
+}
+alert('Изменения на 4 сентября: Y2338 и Y2339 2, 3 пар нет, НО 4 пару отменять нельзя! (но это не точно)');
 
 NWG.innerHTML = new Date(new Date(DW.value).getFullYear(), 11, 28).getWeek();

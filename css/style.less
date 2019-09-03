@@ -6,8 +6,10 @@
     font-family: sans-serif;
 }
 
+
 body {
     padding-top: 5rem;
+
 }
 
 body,
@@ -27,8 +29,13 @@ input {
 
 .info {
     display: flex;
-    margin-left: 3rem;
     margin-top: 1rem;
+    margin-left: 1rem;
+
+    a {
+        text-decoration: none;
+    }
+
 }
 
 .chetnost_block {
@@ -115,6 +122,7 @@ input {
 
 .buttons {
     display: flex;
+    z-index: 2;
 }
 
 // menu 
@@ -291,4 +299,23 @@ h3 {
         display: none;
     }
 
+}
+
+@media(min-width: 1200px) {
+
+    .flex {
+        display: flex;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .info {
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+        position: absolute;
+        justify-content: center;
+    }
 }

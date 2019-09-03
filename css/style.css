@@ -19,8 +19,11 @@ input {
 }
 .info {
   display: flex;
-  margin-left: 3rem;
   margin-top: 1rem;
+  margin-left: 1rem;
+}
+.info a {
+  text-decoration: none;
 }
 .chetnost_block {
   margin-left: 2rem;
@@ -90,6 +93,7 @@ input {
 }
 .buttons {
   display: flex;
+  z-index: 2;
 }
 .menu {
   display: block;
@@ -228,5 +232,21 @@ h3 {
 @media (min-width: 700px) {
   .menu {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .flex {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .info {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+    position: absolute;
+    justify-content: center;
   }
 }
