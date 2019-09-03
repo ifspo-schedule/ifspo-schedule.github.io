@@ -81,7 +81,7 @@ if (document.querySelector('.chetnost').textContent = "Нечётная ") {
 
 }
 
-if (document.querySelector('.chetnost').textContent = "Чётная ") {
+if (document.querySelector('.chetnost').textContent == "Чётная ") {
     document.querySelector('.chetnost').addEventListener('click', () => {
         document.querySelector('#nechet_block').className = "display_none";
         document.querySelector('#chet_block').className = "display_block_border_none";
@@ -91,6 +91,5 @@ if (document.querySelector('.chetnost').textContent = "Чётная ") {
         document.querySelector('#nechet').className = "btn_blue";
         document.querySelector('#all').className = "btn_blue";
     })
-
 }
 NWG.innerHTML = new Date(new Date(DW.value).getFullYear(), 11, 28).getWeek();
