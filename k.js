@@ -1,4 +1,3 @@
-alert('В четверг (5 сентября) все приносим студенческие билеты');
 var d = new Date();
 
 var day = new Array("Воскресенье", "Понедельник", "Вторник",
@@ -92,4 +91,5 @@ if (document.querySelector('.chetnost').textContent == "Чётная ") {
         document.querySelector('#all').className = "btn_blue";
     })
 }
+alert('В четверг (5 сентября) все приносим студенческие билеты');
 NWG.innerHTML = new Date(new Date(DW.value).getFullYear(), 11, 28).getWeek();
