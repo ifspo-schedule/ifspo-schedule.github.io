@@ -93,5 +93,4 @@ if (document.querySelector('.chetnost').textContent == "Чётная ") {
         document.querySelector('#fil').className = "display_block";
     })
 }
-alert('В четверг (5 сентября) все приносим студенческие билеты');
 NWG.innerHTML = new Date(new Date(DW.value).getFullYear(), 11, 28).getWeek();
