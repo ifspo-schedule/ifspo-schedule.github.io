@@ -6,6 +6,7 @@
 }
 body {
   padding-top: 5rem;
+  padding: 5rem;
 }
 body,
 html {
@@ -84,10 +85,6 @@ input {
   color: #1946ba;
   transition: background 0.3s;
 }
-.btn_blue__active:hover {
-  border: 2px solid #1946ba;
-  color: #1946ba;
-}
 .btn_blue__active:focus {
   outline: none;
 }
@@ -143,7 +140,7 @@ h3 {
 }
 .chet-rects-block {
   width: 32rem;
-  height: 53rem;
+  height: auto;
   display: inline-block;
   /* background-color: #f9f9f9; */
   border: 1px solid #EEEEEE;

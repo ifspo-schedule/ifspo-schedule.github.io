@@ -37,7 +37,6 @@ document.querySelector('#all').addEventListener("click", () => {
     document.querySelector('#nechet_block').className = "display_block_border_none";
     document.querySelector('#chet_block').className = "display_block";
     document.querySelector('#chet_blocktwo').className = "display_block_border_none";
-    document.querySelector('#bottom').className = "chet-rects-block-lessons-block";
     document.querySelector('#fil').className = "display_block";
 
 });
@@ -69,6 +68,17 @@ if (new Date(DW.value).getWeek() % 2 == 0) {
 if (new Date(DW.value).getWeek() % 2 == 1) {
     document.querySelector('.chetnost').textContent = "Чётная ";
 }
+
+if (document.querySelector('.chetnost').textContent == "Нечётная ") {
+    document.querySelector('#nechet').className = "btn_blue__active";
+    document.querySelector('#chet').className = "btn_blue";
+    document.querySelector('#all').className = "btn_blue";
+    document.querySelector('#nechet_block').className = "display_block_border_none";
+    document.querySelector('#chet_block').className = "display_none";
+    document.querySelector('#chet_blocktwo').className = "display_none";
+    document.querySelector('#fil').className = "display_block_border_none";
+}
+
 if (document.querySelector('.chetnost').textContent == "Нечётная ") {
     document.querySelector('.chetnost').addEventListener('click', () => {
         document.querySelector('#nechet').className = "btn_blue__active";
@@ -81,6 +91,16 @@ if (document.querySelector('.chetnost').textContent == "Нечётная ") {
     })
 
 }
+if (document.querySelector('.chetnost').textContent == "Чётная ") {
+    document.querySelector('#chet').className = "btn_blue__active";
+    document.querySelector('#nechet').className = "btn_blue";
+    document.querySelector('#all').className = "btn_blue";
+    document.querySelector('#nechet_block').className = "display_none";
+    document.querySelector('#chet_block').className = "display_block_border_none";
+    document.querySelector('#chet_blocktwo').className = "display_block_border_none";
+    document.querySelector('#fil').className = "display_block";
+}
+
 
 if (document.querySelector('.chetnost').textContent == "Чётная ") {
     document.querySelector('.chetnost').addEventListener('click', () => {
