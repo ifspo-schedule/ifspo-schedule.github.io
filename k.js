@@ -16,6 +16,7 @@ document.querySelector('#chet').addEventListener("click", () => {
     document.querySelector('#nechet_block').className = "display_none";
     document.querySelector('#chet_block').className = "display_block_border_none";
     document.querySelector('#chet_blocktwo').className = "display_block_border_none";
+    document.querySelector('#chet_threeblock').className = "display_block_border_none";
     document.querySelector('#fil').className = "display_block";
 
 });
@@ -27,6 +28,7 @@ document.querySelector('#nechet').addEventListener("click", () => {
     document.querySelector('#nechet_block').className = "display_block_border_none";
     document.querySelector('#chet_block').className = "display_none";
     document.querySelector('#chet_blocktwo').className = "display_none";
+    document.querySelector('#chet_threeblock').className = "display_none";
     document.querySelector('#fil').className = "display_block_border_none";
 });
 
@@ -37,6 +39,7 @@ document.querySelector('#all').addEventListener("click", () => {
     document.querySelector('#nechet_block').className = "display_block_border_none";
     document.querySelector('#chet_block').className = "display_block";
     document.querySelector('#chet_blocktwo').className = "display_block_border_none";
+    document.querySelector('#chet_threeblock').className = "display_block_border_none";
     document.querySelector('#fil').className = "display_block";
 
 });
@@ -76,6 +79,7 @@ if (document.querySelector('.chetnost').textContent == "Нечётная ") {
     document.querySelector('#nechet_block').className = "display_block_border_none";
     document.querySelector('#chet_block').className = "display_none";
     document.querySelector('#chet_blocktwo').className = "display_none";
+    document.querySelector('#chet_threeblock').className = "display_none";
     document.querySelector('#fil').className = "display_block_border_none";
 }
 
@@ -87,6 +91,7 @@ if (document.querySelector('.chetnost').textContent == "Нечётная ") {
         document.querySelector('#nechet_block').className = "display_block_border_none";
         document.querySelector('#chet_block').className = "display_none";
         document.querySelector('#chet_blocktwo').className = "display_none";
+        document.querySelector('#chet_threeblock').className = "display_none";
         document.querySelector('#fil').className = "display_block_border_none";
     })
 
@@ -98,6 +103,7 @@ if (document.querySelector('.chetnost').textContent == "Чётная ") {
     document.querySelector('#nechet_block').className = "display_none";
     document.querySelector('#chet_block').className = "display_block_border_none";
     document.querySelector('#chet_blocktwo').className = "display_block_border_none";
+    document.querySelector('#chet_threeblock').className = "display_block_border_none";
     document.querySelector('#fil').className = "display_block";
 }
 
@@ -110,6 +116,7 @@ if (document.querySelector('.chetnost').textContent == "Чётная ") {
         document.querySelector('#nechet_block').className = "display_none";
         document.querySelector('#chet_block').className = "display_block_border_none";
         document.querySelector('#chet_blocktwo').className = "display_block_border_none";
+        document.querySelector('#chet_threeblock').className = "display_block_border_none";
         document.querySelector('#fil').className = "display_block";
     })
 }
