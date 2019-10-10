@@ -88,6 +88,9 @@ input {
 .btn_blue__active:focus {
   outline: none;
 }
+#chet_threeblock {
+  border-bottom: 1px solid silver;
+}
 .buttons {
   display: flex;
   z-index: 2;
